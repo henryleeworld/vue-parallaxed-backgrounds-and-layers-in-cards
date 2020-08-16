@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="卡片視差滾動多層背景" />
+        <meta property="og:description" content="讓通過滑鼠游標實現多層背景以不同的速度移動，從而形成立體的運動效果，帶來非常出色的視覺和交互體驗。" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:500.700" />
+        <link rel="stylesheet" href="css/parallaxed-backgrounds-and-layers.css" />
+        <title>卡片視差滾動多層背景</title>
+    </head>
+    <body>
+        <h1 class="title">將滑鼠游標停留在卡片上</h1>
+
+        <div id="app" class="container">
+            <card data-image="images/sun-rise-at-sansiantai.jpg">
+                <h1 slot="header">三仙台迎曙光</h1>
+                <p slot="content">三仙台日出時的瑰麗雲彩倒映在珊瑚礁海岸的淺灘中，美得令人屏息。</p>
+            </card>
+            <card data-image="images/jin-jiu-road.jpg">
+                <h1 slot="header">金九公路 S 彎道</h1>
+                <p slot="content">金九公路的彎道是最美的夜景，但藍調夜景只有 20 分鐘的時間可捕捉。</p>
+            </card>
+            <card data-image="images/linshanbi-cape-trail.jpg">
+                <h1 slot="header">麟山鼻旁海岸</h1>
+                <p slot="content">麟山鼻步道旁的海岸，退潮後最適合捕捉光影的變化，每天光影變化都不一樣</p>
+            </card>
+            <card data-image="images/tunnel-88.jpg">
+                <h1 slot="header">八八坑道</h1>
+                <p slot="content">因為坑道的恆溫、恆濕，終年的溫度，大概在 15 到 20 度之間，是最適合儲酒的空間</p>
+            </card>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js" integrity="sha512-QJsj3afWlCpnQ60XzzYE8Jb3IgHIK1BcGZox9rUSmRRq3Ocz9vQ1yR80eX2/b9jfx/UuT5zYWNdrM8Te/eCMhQ==" crossorigin="anonymous" defer></script>
+        <script src="js/parallaxed-backgrounds-and-layers.js" defer></script>
+    </body>
+</html>
